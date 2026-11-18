@@ -41,6 +41,7 @@ const translations = {
     workIntro: "Van eigenzinnig theater tot een rol in een Nederlandse dramaserie: Eva beweegt zich tussen podium, camera en stemwerk.",
     television: "Televisie",
     sihameCredit: "Charlene · dramaserie, NPO / KRO-NCRV<br>Regie: Shamira Raphaela &amp; Lisette Donkersloot",
+    sihameDetailsLink: "Bekijk Eva in Sihame",
     theatre: "Theater",
     riotYears: "2025–heden",
     riotCredit: "Theatergroep Drang · acteur en educatief begeleider. Gemaakt vanuit improvisatie; met nagesprekken over radicalisering en polarisatie voor vmbo- en mbo-leerlingen.",
@@ -128,6 +129,7 @@ const translations = {
     workIntro: "From original theatre to a role in a Dutch drama series, Eva moves between stage, screen and voice work.",
     television: "Television",
     sihameCredit: "Charlene · drama series, NPO / KRO-NCRV<br>Directed by Shamira Raphaela &amp; Lisette Donkersloot",
+    sihameDetailsLink: "See Eva in Sihame",
     theatre: "Theatre",
     riotYears: "2025–present",
     riotCredit: "Theatergroep Drang · actor and education facilitator. Devised through improvisation, with post-show discussions on radicalisation and polarisation for Dutch pre-vocational and vocational students.",
@@ -222,6 +224,11 @@ function setLanguage(language) {
   const description = document.querySelector('meta[name="description"]');
   description.content = dictionary.metaDescription;
   document.title = dictionary.pageTitle;
+  document.querySelector('meta[property="og:title"]').content = dictionary.pageTitle;
+  document.querySelector('meta[property="og:description"]').content = dictionary.metaDescription;
+  document.querySelector('meta[property="og:locale"]').content = language === "nl" ? "nl_NL" : "en_US";
+  document.querySelector('meta[name="twitter:title"]').content = dictionary.pageTitle;
+  document.querySelector('meta[name="twitter:description"]').content = dictionary.metaDescription;
 
   languageOptions.forEach((option) => {
     option.setAttribute("aria-pressed", String(option.dataset.languageOption === language));

@@ -106,6 +106,8 @@ h2 { font-family: var(--serif); font-size: clamp(3.2rem, 6vw, 5.7rem); font-weig
 .credit-item p { color: #c1b9c9; font-size: .66rem; line-height: 1.7; margin: 0; }
 .credit-item p a { text-decoration: underline; text-underline-offset: .15em; }
 .credit-item p a:hover { color: #f09471; }
+.credit-detail-link { display: inline-flex; align-items: center; gap: .45rem; margin-top: .55rem; color: #f09471; font-size: .62rem; font-weight: 600; }
+.credit-detail-link:hover { color: #f5f2eb; }
 .profile-bottom { display: grid; grid-template-columns: .9fr 2.45fr; gap: 1.5rem; margin-top: 2rem; padding-top: 1.4rem; border-top: 1px solid rgba(255,255,255,.2); }
 .video-links { border-right: 1px solid rgba(255,255,255,.18); padding-right: 1.5rem; }
 .video-links .credit-label, .skills-panel .credit-label { margin-bottom: 1rem; }
