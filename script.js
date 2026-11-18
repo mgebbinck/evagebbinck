@@ -1,7 +1,8 @@
 const translations = {
   nl: {
-    metaDescription: "Eva Gebbinck — actrice en theatermaker, afgestudeerd aan de HKU.",
-    pageTitle: "Eva Gebbinck — Actrice",
+    metaDescription: "Eva Gebbinck is een Nederlandse actrice en theatermaker uit Amsterdam. Ontdek haar werk op het podium, voor camera en stem.",
+    pageTitle: "Eva Gebbinck | Actrice en theatermaker",
+    skipToContent: "Ga naar de inhoud",
     homeLabel: "Eva Gebbinck, naar begin",
     navigationLabel: "Hoofdnavigatie",
     navAbout: "Over Eva",
@@ -88,8 +89,9 @@ const translations = {
     backToTop: "Terug naar boven ↑"
   },
   en: {
-    metaDescription: "Eva Gebbinck — actor and theatre-maker, trained at HKU.",
-    pageTitle: "Eva Gebbinck — Actor",
+    metaDescription: "Eva Gebbinck is a Dutch actor and theatre-maker based in Amsterdam. Explore her screen, stage and voice work.",
+    pageTitle: "Eva Gebbinck | Actor and theatre-maker",
+    skipToContent: "Skip to content",
     homeLabel: "Eva Gebbinck, back to top",
     navigationLabel: "Main navigation",
     navAbout: "About",

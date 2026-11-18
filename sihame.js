@@ -1,7 +1,8 @@
 const translations = {
   nl: {
-    metaDescription: "Eva Gebbinck als Charlene in de dramaserie Sihame.",
+    metaDescription: "Eva Gebbinck als Charlene in de KRO-NCRV-serie Sihame. Lees over haar rol en bekijk de officiële seriepagina op NPO Start.",
     pageTitle: "Eva Gebbinck als Charlene in Sihame",
+    skipToContent: "Ga naar de inhoud",
     homeLabel: "Eva Gebbinck, naar de hoofdpagina",
     navigationLabel: "Paginanavigatie",
     backToWork: "Terug naar werk",
@@ -23,8 +24,9 @@ const translations = {
     footerRole: "Actrice · Sihame"
   },
   en: {
-    metaDescription: "Eva Gebbinck as Charlene in the drama series Sihame.",
+    metaDescription: "Eva Gebbinck as Charlene in the KRO-NCRV series Sihame. Read about her role and visit the official series page on NPO Start.",
     pageTitle: "Eva Gebbinck as Charlene in Sihame",
+    skipToContent: "Skip to content",
     homeLabel: "Eva Gebbinck, back to the homepage",
     navigationLabel: "Page navigation",
     backToWork: "Back to work",
