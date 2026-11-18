@@ -1,0 +1,56 @@
+.sihame-page { min-height: 100vh; }
+.sihame-header { min-height: 84px; padding: 0 7.1%; display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; background: var(--paper); }
+.sihame-nav { display: flex; align-items: center; gap: clamp(1.2rem, 3vw, 2.5rem); }
+.return-link { display: inline-flex; align-items: center; gap: .55rem; font-size: .72rem; font-weight: 600; }
+.return-link:hover, .sihame-footer > a:last-of-type:hover { color: var(--orange); }
+.sihame-hero { min-height: 520px; position: relative; overflow: hidden; display: flex; align-items: center; padding: 5rem 12.5%; background: var(--purple); color: var(--paper); }
+.sihame-hero::after { content: "S"; position: absolute; right: 7%; bottom: -5.2rem; color: rgba(255,255,255,.045); font-family: var(--serif); font-size: clamp(26rem, 47vw, 44rem); line-height: .8; pointer-events: none; }
+.sihame-hero-copy { position: relative; z-index: 1; }
+.sihame-kicker { margin: 0 0 1.5rem; color: #c1b9c9; font-size: .68rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.sihame-hero h1 { margin: 0 0 1.3rem -.06em; font-family: var(--serif); font-size: clamp(5.5rem, 12vw, 10rem); font-weight: 500; letter-spacing: -.08em; line-height: .9; }
+.sihame-role { margin: 0; color: #e8dfeb; font-size: clamp(.9rem, 1.5vw, 1.15rem); }
+.sihame-hero-index { position: absolute; right: 7.1%; bottom: 2rem; color: #c1b9c9; font-size: .6rem; letter-spacing: .14em; }
+.sihame-content { display: grid; grid-template-columns: 1fr 3fr; gap: 5%; padding-top: 8rem; padding-bottom: 8rem; }
+.sihame-story { max-width: 760px; }
+.sihame-story > .eyebrow, .clip-copy > .eyebrow { color: var(--muted); margin: .15rem 0 1.25rem; }
+.sihame-story h2, .clip-copy h2 { margin-bottom: 1.8rem; }
+.sihame-description { max-width: 650px; color: #65625b; font-size: .91rem; line-height: 1.9; margin: 0; }
+.sihame-clip-section { padding: 6rem 0 7rem; background: #eae6dd; }
+.clip-layout { display: grid; grid-template-columns: 1.35fr .65fr; gap: 8%; align-items: center; margin-top: 2.8rem; }
+.clip-placeholder { min-height: 340px; padding: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 1.2rem; background: #ded8cd; text-align: center; }
+.clip-placeholder-mark { width: 52px; height: 52px; display: grid; place-items: center; border: 1px solid #b8afa1; border-radius: 50%; color: var(--orange); font-size: 1.5rem; }
+.clip-placeholder p { max-width: 280px; margin: 0; color: #65625b; font-size: .79rem; line-height: 1.7; }
+.clip-copy h2 { font-size: clamp(2.7rem, 4vw, 4rem); }
+.clip-copy h2 em { color: var(--orange); }
+.clip-copy > p:not(.eyebrow) { color: #65625b; font-size: .81rem; line-height: 1.8; }
+.npo-link { display: inline-flex; align-items: center; gap: .8rem; margin-top: .7rem; padding: .85rem 1.1rem; border-radius: 2rem; background: var(--ink); color: var(--paper); font-size: .7rem; font-weight: 600; transition: background .2s ease; }
+.npo-link span:last-child { color: #f09471; }
+.npo-link:hover { background: var(--purple); }
+.sihame-footer { min-height: 88px; border-top: 1px solid #ddd8ce; padding: 1.2rem 7.1%; display: flex; align-items: center; justify-content: space-between; gap: 1rem; color: var(--muted); font-size: .65rem; }
+.sihame-footer > a:last-of-type { transition: color .2s ease; }
+
+@media (max-width: 900px) {
+  .sihame-header { padding: 0 6%; }
+  .sihame-hero { padding-left: 8%; padding-right: 8%; }
+  .sihame-content { grid-template-columns: 1fr 2.3fr; padding-top: 6rem; padding-bottom: 6rem; }
+  .clip-layout { gap: 5%; }
+}
+
+@media (max-width: 640px) {
+  .sihame-header { min-height: 72px; padding: 0 6%; }
+  .sihame-nav { gap: .85rem; }
+  .return-link { font-size: .63rem; }
+  .language-option { min-width: 31px; }
+  .sihame-hero { min-height: 410px; padding: 4rem 7%; }
+  .sihame-hero h1 { font-size: clamp(5.1rem, 20vw, 7rem); }
+  .sihame-hero-index { right: 7%; bottom: 1.5rem; }
+  .sihame-content { display: block; padding-top: 5rem; padding-bottom: 5rem; }
+  .sihame-content .section-marker, .sihame-clip-section .section-marker { margin-bottom: 2rem; }
+  .sihame-story h2 { font-size: clamp(3rem, 12vw, 4.5rem); }
+  .sihame-description { font-size: .86rem; }
+  .sihame-clip-section { padding: 4.5rem 0 5rem; }
+  .clip-layout { grid-template-columns: 1fr; gap: 2.2rem; margin-top: 2rem; }
+  .clip-placeholder { min-height: 220px; }
+  .clip-copy h2 { font-size: clamp(3rem, 12vw, 4rem); }
+  .sihame-footer { padding: 1.4rem 7%; flex-wrap: wrap; }
+}
